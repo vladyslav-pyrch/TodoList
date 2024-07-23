@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Api", "TodoList.Api\TodoList.Api.csproj", "{7C4477CA-A6F0-437A-BB2C-08036EDE92D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Api", "src\TodoList.Api\TodoList.Api.csproj", "{7C4477CA-A6F0-437A-BB2C-08036EDE92D5}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TodoList.Core", "TodoList.Core\TodoList.Core.fsproj", "{A284D648-2523-4E65-A5AE-362EA10B8363}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TodoList.Core", "src\TodoList.Core\TodoList.Core.fsproj", "{A284D648-2523-4E65-A5AE-362EA10B8363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Infrastructure", "TodoList.Infrastructure\TodoList.Infrastructure.csproj", "{B2F208B2-2E1A-4CDA-BFBD-22E70F9FE832}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Infrastructure", "src\TodoList.Infrastructure\TodoList.Infrastructure.csproj", "{B2F208B2-2E1A-4CDA-BFBD-22E70F9FE832}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

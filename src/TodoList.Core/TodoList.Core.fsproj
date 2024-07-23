@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Domain\Model\IIdentity.fs" />
+        <Compile Include="Domain\Model\IEntity.fs" />
+        <Compile Include="Domain\Model\IRepository.fs" />
+        <Compile Include="Domain\Model\Identity.fs" />
+        <Compile Include="Domain\Model\Entity.fs" />
+        <Compile Include="Domain\Model\Todos\TodoId.fs" />
+        <Compile Include="Domain\Model\Todos\Todo.fs" />
+        <Compile Include="Domain\Model\Todos\ITodoRepository.fs" />
+        <Compile Include="Services\TodoService.fs" />
+    </ItemGroup>
+
+</Project>
