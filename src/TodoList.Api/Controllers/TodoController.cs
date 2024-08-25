@@ -23,7 +23,7 @@ public class TodoController(TodoService todoService) : ControllerBase
 
         TodoId id = await todoService.Add(todoDto.Name, todoDto.Description ?? FSharpOption<string>.None);
 
-        return Result(HttpStatusCode.Created201, new { Id = id.Value });
+        return Result(HttpStatusCode.Created201, new IdDto { Id = id.Value });
     }
 
     [HttpRoute("/update", "PATCH")]
@@ -50,7 +50,13 @@ public class TodoController(TodoService todoService) : ControllerBase
     [HttpRoute("/get_all", "GET")]
     public async Task<IActionResult> GetAll()
     {
-        List<Todo> todos = (await todoService.GetAll()).ToList();
+        List<TodoDto> todos = (await todoService.GetAll()).Select(todo => new TodoDto
+        {
+            Id = todo.Id.Value,
+            Name = todo.Name,
+            Description  = todo.Description,
+            isDone = todo.IsDone
+        }).ToList();
 
         return Result(HttpStatusCode.Ok200, todos);
     }
